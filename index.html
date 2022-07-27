@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <link rel="stylesheet" href="styles.css" />
+    <div id="calculator">
+      <div id="display">
+        <div id="sdisplay">999</div>
+        <div id="bdisplay">9999</div>
+      </div>
+      <div id="bigBtn">
+        <button id="clear">Clear</button>
+        <div id="blankSpace"></div>
+        <button id="delete">Delete</button>
+      </div>
+      <div class="keyPad">
+        <div id="col1">
+          <button class="numberBtns" id="7" data-number>7</button>
+          <button class="numberBtns" id="4" data-number>4</button>
+          <button class="numberBtns" id="1" data-number>1</button>
+          <button id=".">.</button>
+        </div>
+        <div id="col2">
+          <button class="numberBtns" id="8" data-number>8</button>
+          <button class="numberBtns" id="5" data-number>5</button>
+          <button class="numberBtns" id="2" data-number>2</button>
+          <button class="numberBtns" id="0" data-number>0</button>
+        </div>
+        <div id="col3">
+          <button class="numberBtns" id="9" data-number>9</button>
+          <button class="numberBtns" id="6" data-number>6</button>
+          <button class="numberBtns" id="3" data-number>3</button>
+          <button id="=" data-operator>=</button>
+        </div>
+        <div id="col4">
+          <button id="÷" data-operator>÷</button>
+          <button id="x" data-operator>x</button>
+          <button id="-" data-operator>-</button>
+          <button id="+" data-operator>+</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="scripts.js"></script>
+</html>

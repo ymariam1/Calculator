@@ -1,0 +1,92 @@
+* {
+  padding: 10px;
+}
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 75vh;
+  min-height: 500px;
+  padding: 10px;
+  margin-top: 50px;
+}
+
+.keyPad {
+  display: flex;
+  outline: auto;
+  max-width: 400px;
+  max-height: 560px;
+}
+#bigBtn {
+  display: flex;
+  flex-direction: row;
+  min-width: 350px;
+  align-items: center;
+  justify-content: center;
+}
+#display {
+  padding: 10px 20px;
+  border: 2px black solid;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  background-color: honeydew;
+  text-align: right;
+  word-wrap: break-word;
+  word-break: break-all;
+  min-height: 64px;
+  min-width: 350px;
+}
+#calculator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+  max-height: 630px;
+  background-color: darkgrey;
+  width: 400px;
+}
+#col1,
+#col2,
+#col3,
+#col4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 5px;
+}
+
+#clear,
+#delete {
+  padding: 25px;
+  display: flex;
+  flex-direction: row;
+  padding-left: 65px;
+  padding-right: 65px;
+}
+#clear {
+  background-color: rgb(223, 75, 105);
+}
+#delete {
+  background-color: rgb(32, 179, 228);
+}
+.keyPad button {
+  margin-bottom: 5px;
+  padding: 30px;
+}
+button {
+  border-radius: 5px;
+}
+#sdisplay {
+  font-size: 15px;
+  padding-bottom: 0;
+  min-height: 32px;
+}
+.keyPad {
+  min-width: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
