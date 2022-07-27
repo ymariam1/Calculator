@@ -19,23 +19,24 @@ operatorButtons.forEach((button) =>
   button.addEventListener("click", () => setOperation(button.textContent))
 );
 
-function appendNumber(number) {
-  display.textContent += number;
-}
 function setOperation(newOperation) {
   currentOperation = newOperation;
 }
 
 clearBtn.addEventListener("click", clear);
+deleteBtn.addEventListener("click", deletes);
 
 function clear() {
   display.textContent = "0";
   sdisplay.textContent = " ";
 }
-function appendNumber(string) {
-  if ((display.textContent = "0")) {
-    display.textContent = string;
+function appendNumber(number) {
+  if (display.textContent === "0") {
+    display.textContent = number;
   } else {
-    display.textContent += string;
+    display.textContent += number;
   }
+}
+function deletes() {
+  display.textContent = display.textContent.toString().slice(0, -1);
 }
