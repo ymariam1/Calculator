@@ -91,3 +91,7 @@ button {
   align-items: center;
   justify-content: center;
 }
+button:hover {
+  transform: scale(1.05);
+  background-color: darkgrey;
+}
